@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Syne&display=swap');
 
 :root {
-	--main-color: #474747;
-	--hover-color: #FFDB58;
-	--bg-color: #fefcff;
+	--main-color: #ac9f7c;
+	--hover-color: #e48368;
+	--hover-bg-color: #fac3a5;
+	--bg-color: #fbede0;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 body {
 	background-color: var(--bg-color);
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Syne', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,20 +23,27 @@ body {
 
 h1 {
 	color: var(--main-color);
-	letter-spacing: 8px;
+	font-size: 36px;
+	letter-spacing: 6px;
 	text-transform: uppercase;
 }
 
 li {
+	border: 1px solid var(--main-color);
+	border-radius: 30px;
 	color: var(--main-color);
 	font-size: 22px;
 	cursor: pointer;
 	letter-spacing: 2px;
 	line-height: 3;
+	margin-bottom: 15px;
+	padding: 5px 15px;
+	text-transform: lowercase;
 	transition-duration: 0.5s ease;
 }
 
 li:hover {
+	background-color: var(--hover-bg-color);
 	color: var(--hover-color);
 }
 
